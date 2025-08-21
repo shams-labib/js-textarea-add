@@ -22,6 +22,22 @@
     <textarea id="textarea" cols="30" rows="5"></textarea> <br> <br>
     <button id="btn">Enter your comment</button>
 
-    <script src="index.js"></script>
+    <script>
+        const mainMal = document.getElementById('textarea');
+const btnMal = document.getElementById('btn');
+
+btnMal.addEventListener('click', function(){
+  const mainMal2 = mainMal.value;
+  const newValue = document.createElement('p');
+  newValue.innerText = mainMal2;
+  newValue.classList.add('comment')
+  const newMan = document.getElementById('div');
+
+  newMan.append(newValue);
+
+  mainMal.value = '';
+});
+
+    </script>
 </body>
 </html>

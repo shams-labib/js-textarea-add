@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+</head>
+<body>
+    <input type="password" id="inp"> <br> <br>
+    <button id="btn">Click here</button>
+
+   <script>
+    const input = document.getElementById('inp');
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function(){
+        if(input.getAttribute('type') === 'password'){
+            input.setAttribute('type', Text);
+            btn.innerText = 'Hide password';
+        }
+        else {
+            input.setAttribute('type', 'password');
+            btn.innerText = 'show password'
+        }
+    })
+   </script>
+</body>
+</html>

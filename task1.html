@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+    <style>
+        .highlite {
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="p-tag">This is peragraph</p>
+    <button id="btn">Click to Change</button>
+
+    <script>
+        const pTag = document.getElementById('p-tag');
+        const btnTag = document.getElementById('btn');
+        btnTag.addEventListener('click', function(){
+            pTag.classList.toggle('highlite')
+        } )
+    </script>
+</body>
+</html>

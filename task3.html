@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 3</title>
+    <style>
+        .cooment {
+            text-align: center;
+            background-color: lightblue;
+            padding: 30px;
+            height: 30vh;
+            width: 30%;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="cooment">
+     <span id="span" style="font-size: 100px;">0</span> <br> <br>
+     <button id="plus">Plus</button>
+     <button id="sub">Sub</button>
+
+     <script>
+        const span = document.getElementById('span');
+        const plus = document.getElementById('plus');
+        const sub = document.getElementById('sub');
+
+        let count = 0;
+
+        plus.addEventListener('click', function(){
+            count++;
+            span.innerText = count;
+        })
+        sub.addEventListener('click', function(){
+            count--;
+            span.innerText = count;
+        })
+     </script>
+   </div>
+</body>
+</html>
